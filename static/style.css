@@ -1,0 +1,108 @@
+body
+{
+    background-color: blanchedalmond;
+    color:rgb(92, 18, 18);
+    text-align:center;
+    font-family:sans-serif;
+}
+h1
+{
+    color:rgb(92, 18, 18);
+    font-size:35px;
+    text-align: center;
+}
+table
+{
+    width:70%;
+    margin:auto;
+    border-collapse: collapse;
+    background-color: rgb(189, 223, 49);
+    color:rgb(5, 5, 17)
+}
+th{
+    background-color: rgb(12, 61, 7);
+    color:rgb(149, 241, 149);
+    text-align: center;
+    padding:12px;
+}
+td{
+    text-align: center;
+    padding:12px;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(242, 115, 36);
+}
+tr:hover{
+    background-color: #0a192f;
+    color:wheat;
+}
+nav
+{
+    background-color: chocolate;
+    color:#0a192f;
+    padding:20px;
+    border-radius: 2px 20px;
+    text-align: right;
+}
+nav a
+{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    margin-left:20px;
+    padding:8px 15px;
+    background-color: rgb(27, 60, 78);
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: #64ffda;
+    color:#0a192f;
+    transition: 0.5s;
+}
+form
+{
+    margin-top: 20px;
+    text-align:center;
+    border-radius:10px;
+    border-color:rgb(11, 9, 16);
+    border-width: 2px;
+
+}
+input
+{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+button
+{
+    background-color:rgb(22, 4, 55);
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    border-color:rgb(92, 18, 18);
+    border-width: 2px;
+}
+h2
+{
+    color:rgb(18, 54, 26);
+    text-align:center;
+    font-style: italic;
+
+}
+label
+{
+    color:rgb(6, 50, 65);
+    font-size:20px;
+    font-family: 'Arial Narrow', sans-serif;
+    font-weight: bold;
+}
+img
+{ 
+    width:500px;
+    margin:auto;
+    display:block;
+   
+}
