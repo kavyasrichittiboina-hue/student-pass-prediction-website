@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/home">Prediction</a>
+    </nav>
+    <h1>View History</h1>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Hours</th>
+            <th>Prediction</th>
+            <th>Probability</th>
+            <th>Action</th>
+        </tr>
+        {% for row in history %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>
+                {% if row[2] == 1 %}
+                    Pass
+                {% else %}
+                    Fail
+                {% endif %}
+            </td>
+            <td>
+                {{ "%2.f"|format(row[3]*100)}}%
+            </td>
+            <td>
+                <a href="/delete/{{row[0]}}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

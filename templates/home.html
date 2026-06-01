@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Pass Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/history">History</a>
+    </nav>
+    <h1>Student pass prediction</h1>
+    <form method="POST">
+        <label>Enter hours Studied:</label>
+        <input type="number" step="0.1" name="hours" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction is not none %}
+        <h2>Prediction:{{prediction}}</h2>
+        <h2>Result:{{result}}</h2>
+        <h2>probability of passing:{{probability}}</h2>
+        
+        <img src="{{url_for('static',filename='logistic_regression.png')}}" alt="Logistic Regression Graph">
+    {% endif %}
+    <br><br>
+    <a href="/history">View History</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Data</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/home">Prediction</a>
+        <a href="/history">History</a>
+    </nav>
+    <h1>Delete Data Here</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Hours</th>
+            <th>Prediction</th>
+            <th>Probability</th>
+        </tr>
+        <tr>
+            <td>{{data[0]}}</td>
+            <td>{{data[1]}}</td>
+            <td>{{data[2]}}</td>
+            <td>{{data[3]}}</td>
+        </tr>
+    </table>
+    <form method="POST">
+        <button type="submit">Confirm Delete</button>
+    </form>
+</body>
+</html>
