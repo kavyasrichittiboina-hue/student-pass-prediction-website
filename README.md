@@ -1,2 +1,3 @@
 # student-pass-prediction-website
-A Flask Web application for Student Pass Prediction using Logistic Regression, Html, CSS and Matplotlib
+A Flask Web application for Student Pass Prediction using Logistic Regression, Html, CSS and Matplotlib,sqlite3
+
